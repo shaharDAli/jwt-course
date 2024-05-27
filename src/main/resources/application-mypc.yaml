@@ -1,0 +1,12 @@
+server:
+  servlet:
+    context-path: /mypc
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jwt_course?useSSL=false
+    username: root
+    password: 3141
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
