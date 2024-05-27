@@ -34,6 +34,7 @@ public class LoginController {
 
 	@PostMapping("/signup")
 	public ResponseEntity<?> sigunup(@RequestBody SignupRequestDto requestDto) {
+		System.out.println(requestDto);
       return ApiResponse.retrieved(userService.signupUser(requestDto));
 	}
 	
